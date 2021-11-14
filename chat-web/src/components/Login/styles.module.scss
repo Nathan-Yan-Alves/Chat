@@ -1,0 +1,97 @@
+.loginWrapper {
+    width: 430px;
+    height: 200px;
+    padding: 15px;
+
+    place-self: center;
+
+    margin: 0 auto;
+
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+
+    border: 1px solid #000;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+
+        margin-bottom: 12px;
+    }
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+
+        .userImage {
+            width: 68px;
+            height: 68px;
+            padding: 2px;
+
+            margin-right: 8px;
+
+            border-radius: 50%;
+            background: linear-gradient(90deg, #f77f42, #0acf34);
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+
+            .fileInp {
+                display: none;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+
+                border: 3px solid #000;
+                border-radius: 50%;
+            }
+        }
+
+        input {
+            padding: 10px;
+
+            margin-right: 8px;
+
+            border: 2px solid #000;
+            border-radius: 18px;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        button {
+            width: 80px;
+            height: 38px;
+
+            border: 2px solid #000;
+            border-radius: 18px;
+
+            background: #0acf34;
+            color: #000;
+
+            &:hover {
+                background: transparent;
+                color: #0acf34;
+                border-color: #0acf34;
+            }
+        }
+    }
+}
+
+.avatarOverlay {
+    position: absolute;
+
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
